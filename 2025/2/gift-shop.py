@@ -1,15 +1,6 @@
 import sys
 
 
-def factors_of(num):
-
-    factors = []
-    for i in range(1,num + 1):
-        if not(num % i):
-            factors.append(i)
-    factors.remove(num)
-    return factors
-
 class Factors_of:
     def __init__(self):
         self.prev = {}
