@@ -1,4 +1,5 @@
-import sys, math
+import sys
+
 
 def sign(x):
     return -1 if x < 0 else 1
@@ -32,11 +33,8 @@ def part2():
 
         pointing = (pointing + delta) % 100
         true_delta = pointing - start_point
-        
-        if not pointing:
-            zeroes += 1
 
-        elif sign(true_delta) != sign(delta) and start_point != 0:
+        if not pointing or (sign(true_delta) != sign(delta) and start_point != 0):
             zeroes += 1
 
     return zeroes
