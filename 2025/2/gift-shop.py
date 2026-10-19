@@ -61,4 +61,5 @@ class Solution:
 factor_finder = Factors_of()
 solution = Solution(ranges, factor_finder)
 
-print(solution.part2())
+print(f"Part 1 solution: {solution.part1()}")
+print(f"Part 2 solution: {solution.part2()}")
